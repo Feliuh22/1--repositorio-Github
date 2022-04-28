@@ -415,6 +415,34 @@ textarea{
     filter: drop-shadow(5px 5px 5px black);
 }
 
+.circle{
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 150px;
+    height: 150px;
+    background: #0c6108;
+    border-radius: 50%;
+
+    /* animation: ; */
+    animation-name: mover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /*0%-100%-0% */
+}
+
+@keyframes mover{
+    0%{
+        transform: translateX(0);
+        background-color: #0dff00;
+    }
+    100%{
+        transform: translateX(100%) translateY(100%);
+        background-color: #0c6108;
+    }
+}
+
+
 /* *********** */
 
     @media screen and (min-width: 320px){
